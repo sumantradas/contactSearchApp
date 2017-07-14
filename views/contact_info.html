@@ -1,0 +1,15 @@
+<div class="list-group-item">
+        <h2 class="text-center">{{currentContact.firstName}} {{currentContact.lastName}}</h2>
+       
+        <p><b>First Name</b>: {{currentContact.firstName}}</p>
+        <p><b>Last Name</b>: {{currentContact.lastName}}</p>
+        <p><b>Email Id</b>: {{currentContact.contactEmail}}</p>
+        <p><b>Contact No.</b>: {{currentContact.contactNumber}}</p>
+       
+
+        <a ng-href="#/edit/{{contacts.indexOf(currentContact)}}">
+          <button class="btn btn-primary">
+            <span class="glyphicon glyphicon-pencil"></span><span> - Edit</span>
+          </button>
+        </a>
+      </div>
